@@ -1,0 +1,71 @@
+/* Global styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  #app-root {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+  
+  #main-container {
+    display: flex;
+    flex-grow: 1;
+  }
+  
+  .content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  .section {
+    padding: 20px;
+  }
+  
+  .section h1 {
+    color: #041e42;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .section p, .section .form-group, .section table {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 10px 0;
+  }
+  
+  .table {
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+  .table th, .table td {
+    text-align: left;
+    padding: 10px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .btn-primary {
+    background-color: #041e42;
+    border: none;
+    padding: 10px 20px;
+  }
+  
+  .btn-primary:hover {
+    background-color: #033078;
+  }
+  

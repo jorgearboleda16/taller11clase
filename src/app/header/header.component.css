@@ -1,0 +1,21 @@
+.header {
+    background-color: #041e42;
+    color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .logo {
+    position: absolute;
+    left: 10px;
+    height: 40px; /* Ajusta este valor según el tamaño de tu logo */
+  }
+  
+  .title {
+    margin: 0;
+    font-size: 24px;
+  }
+  

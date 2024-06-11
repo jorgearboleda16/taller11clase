@@ -1,0 +1,78 @@
+<app-header></app-header>
+<div id="main-container">
+  <app-sidebar></app-sidebar>
+  <div class="content">
+    <!-- Inicio -->
+    <div id="inicio" class="section">
+      <h1>Bienvenidos a Taller 11</h1>
+      <p>
+        Taller 11 es una empresa dedicada a ofrecer soluciones tecnológicas innovadoras para mejorar la eficiencia y productividad de su negocio.
+      </p>
+      <p>
+        Nos enorgullece ofrecer productos de alta calidad y servicios personalizados para satisfacer las necesidades específicas de cada uno de nuestros clientes.
+      </p>
+      <p>
+        Explore nuestro sitio para conocer más sobre nosotros y lo que podemos hacer por usted.
+      </p>
+    </div>
+
+    <!-- Nosotros -->
+    <div id="nosotros" class="section">
+      <h1>Sobre Nosotros</h1>
+      <p>
+        En Taller 11, somos un equipo de profesionales apasionados por la tecnología y la innovación. Nuestra misión es proporcionar soluciones que impulsen el éxito de nuestros clientes.
+      </p>
+      <p>
+        Con años de experiencia en el sector, nos especializamos en el desarrollo de software, consultoría tecnológica y servicios de soporte.
+      </p>
+      <p>
+        Creemos en la colaboración y el trabajo en equipo para lograr resultados excepcionales.
+      </p>
+    </div>
+
+    <!-- Servicios -->
+    <div id="servicios" class="section">
+      <h1>Nuestros Servicios</h1>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Servicio</th>
+            <th scope="col">Descripción</th>
+            <th scope="col">Precio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let servicio of servicios; let i = index">
+            <th scope="row">{{ i + 1 }}</th>
+            <td>{{ servicio.nombre }}</td>
+            <td>{{ servicio.descripcion }}</td>
+            <td>{{ servicio.precio | currency }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Contactos -->
+    <div id="contactos" class="section">
+      <h1>Contacto</h1>
+      <form>
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Ingresa tu email">
+        </div>
+        <div class="form-group">
+          <label for="mensaje">Mensaje</label>
+          <textarea class="form-control" id="mensaje" rows="3" placeholder="Ingresa tu mensaje"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
+
+    <app-footer></app-footer>
+  </div>
+</div>
